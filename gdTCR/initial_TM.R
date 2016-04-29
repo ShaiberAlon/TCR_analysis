@@ -358,7 +358,7 @@ trv_summary_trg_PBL$TRV <- factor(trv_summary_trg_PBL$TRV, levels =c("1", "2", "
 trv_summary_trg_IEL_PBL <- filter(trv_summary_trg, Group=="Control" | Group=="Active" | Group=="GFD")
 trv_summary_trg_IEL_PBL$Tissue <- factor(trv_summary_trg_IEL_PBL$Tissue, levels =c("PBL", "IEL"))
 trv_summary_trg_IEL_PBL$TRV <- factor(trv_summary_trg_IEL_PBL$TRV, levels =c("1", "2", "3", "4", "5", "8", "9", "10"))
-trv_summary_trg_IEL_PBL$ID <- factor(trv_summary_trg_IEL_PBL$ID, levels =c("7", "13", "40", "53", "110", "111", "144", "106", "22", "35", "46", "51"
+trv_summary_trg_IEL_PBL$ID <- factor(trv_summary_trg_IEL_PBL$ID, levels =c("7", "13", "40", "53", "110", "111", "144", "106", "22", "35", "46", "47", "51"
                                                                            , "81", "112", "143", "3", "4", "28", "33", "41", "113", "9", "43"))
 
 g = ggplot(trv_summary_trg_IEL_PBL,aes(factor(ID),freq,fill=TRV))
